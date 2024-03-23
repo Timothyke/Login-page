@@ -1,0 +1,43 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class LoginSystemBackend {
+    private static Map<String, String> users = new HashMap<>();
+
+    public static void main(String[] args) {
+        // Initialize some users (in a real system, these would be stored securely, like in a database)
+        users.put("user1", "password1");
+        users.put("user2", "password2");
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Welcome message
+        System.out.println("Welcome to the Login System!");
+
+        // User login
+        System.out.print("Enter your username: ");
+        String username = scanner.nextLine();
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+
+        // Simple authentication logic
+        boolean isAuthenticated = authenticateUser(username, password);
+
+        if (isAuthenticated) {
+            System.out.println("Login successful!");
+            // Proceed with further actions (like redirecting, integrating AI, etc.)
+        } else {
+            System.out.println("Invalid username or password. Please try again.");
+        }
+    }
+
+    // Method to authenticate user credentials
+    public static boolean authenticateUser(String username, String password) {
+        // Retrieve the password associated with the given username
+        String storedPassword = users.get(username);
+        
+        // Check if the username exists and the password matches
+        return storedPassword != null && storedPassword.equals(password);
+    }
+}
