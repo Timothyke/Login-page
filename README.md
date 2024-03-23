@@ -1,2 +1,67 @@
-# Login-page
-Java.
+import java.util.Scanner;
+
+public class LoginSystem {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+//welcome statement
+        System.out.println("Welcome to the Login System!");
+
+        // User login
+        System.out.print("Enter your username: ");
+        String username = scanner.nextLine();
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+
+        // Simple authentication logic (replace with secure authentication methods)
+        boolean isAuthenticated = authenticateUser(username, password);
+
+        if (isAuthenticated) {
+            System.out.println("Login successful!");
+            // Redirect to social media links
+            redirectToSocialMedia();
+            // Perform AI integration
+            integrateAI();
+            // Perform Google login
+            loginWithGoogle();
+        } else {
+            System.out.println("Invalid username or password. Please try again.");
+        }
+    }
+
+    // Simple authentication method (replace with secure authentication methods)
+    public static boolean authenticateUser(String username, String password) {
+        // Simulated user credentials
+        String validUsername = "user";
+        String validPassword = "password";
+
+        return username.equals(validUsername) && password.equals(validPassword);
+    }
+
+    // Method to redirect to social media links
+    public static void redirectToSocialMedia() {
+        // Replace with actual social media links
+        System.out.println("Redirecting to social media links...");
+        // Example links
+        System.out.println("Facebook: www.facebook.com");
+        System.out.println("Twitter: www.twitter.com");
+        System.out.println("Instagram: www.instagram.com");
+    }
+
+    // Method to integrate AI
+    public static void integrateAI() {
+        // Placeholder for AI integration
+        System.out.println("AI integration in progress...");
+        // Example AI features
+        System.out.println("AI chat assistant activated.");
+        System.out.println("AI recommendation system enabled.");
+    }
+
+    // Method to perform Google login
+    public static void loginWithGoogle() {
+        // Placeholder for Google login integration
+        System.out.println("Logging in with Google...");
+        // Example Google login process
+        System.out.println("Google login successful.");
+    }
+}
