@@ -13,7 +13,7 @@ public class LoginSystemBackend {
         Scanner scanner = new Scanner(System.in);
 
         // Welcome message
-        System.out.println("Welcome to the Login System!");
+        System.out.println("Welcome to the our Login System!");
 
         // User login
         System.out.print("Enter your username: ");
