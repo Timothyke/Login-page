@@ -28,7 +28,7 @@ public class LoginSystemBackend {
             System.out.println("Login successful!");
             // Proceed with further actions (like redirecting, integrating AI, etc.)
         } else {
-            System.out.println("Invalid username or password. Please try again.");
+            System.out.println("Invalid username or password. Please try again!");
         }
     }
 
