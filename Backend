@@ -6,7 +6,7 @@ public class LoginSystemBackend {
     private static Map<String, String> users = new HashMap<>();
 
     public static void main(String[] args) {
-        // Initialize some users (in a real system, these would be stored securely, like in a database)
+       )
         users.put("user1", "password1");
         users.put("user2", "password2");
 
