@@ -51,7 +51,7 @@ public class LoginSystem {
     // Method to integrate AI
     public static void integrateAI() {
         // Placeholder for AI integration
-        System.out.println("AI integration in progress...");
+        System.out.println("AI integration in progress....");
         // Example AI features
         System.out.println("AI chat assistant activated.");
         System.out.println("AI recommendation system enabled.");
