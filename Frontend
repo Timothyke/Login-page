@@ -59,7 +59,7 @@ public class LoginSystem {
 
     // Method to perform Google login
     public static void loginWithGoogle() {
-        // Placeholder for Google login integration
+        // Placeholder for Googlee login integration
         System.out.println("Logging in with Google...");
         // Example Google login process
         System.out.println("Google login successful.");
